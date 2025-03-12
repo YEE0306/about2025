@@ -11,6 +11,9 @@
 		h2 {color:#33ff33; font-size:40px;}
 	</style>
 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 	<script>
 		function change1() {
   			document.getElementById("pic").src = "mountain.jpg";
@@ -29,30 +32,42 @@
   <nav>
 
 		<ul>
-			<li><a href="#YeeTing">關於我</li>
-			<li><a href="#soundtrack">電影配樂</li>
-			<li><a href="#youtube">推薦影片</li>
+			<li><a href="#YeeTing">關於我</a></li>
+			<li><a href="#soundtrack">電影配樂</a></li>
+			<li><a href="#youtube">推薦影片</a></li>
 		</ul>
 
   </nav>
 
-  <main>
+  <main class="container-fluid bg-primary text-white text-center">
+ 
+			<img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 
-		<img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img></td>
-	    <h3 id="YeeTing">廖翊婷(Liao-YeeTing)</h3>
-		靜宜大學:<a href="https://www.pu.edu.tw/">https://www.pu.edu.tw/</a><br>
-		ig:<a href="https://www.instagram.com/l_.0306/?hl=zh-tw" target="_blank">https://www.instagram.com/l_.0306/?hl=zh-tw</a><br>
-		tel:<a href="tel:0921123456">0921123456</a><br>
-		E-MAIL:<a href="a0932111445@gmail.com">a0932111445@gmail.com</a><br>
-		<h3 id="soundtrack">電影配樂</h3>
-		大象席地而坐電影配樂<br>
-			<audio controls>
-			<source src="elephant.mp3" type="audio/mP3">
-			</audio><br>
-		<h3 id="youtube">推薦影片</h3>
-		不要去臺灣<br>
-		<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
-		
+			<div class="row">
+
+			<section class="col-lg-4">
+		    <h3 id="YeeTing">廖翊婷(Liao-YeeTing)</h3>
+			靜宜大學:<a href="https://www.pu.edu.tw/">https://www.pu.edu.tw/</a><br>
+			ig:<a href="https://www.instagram.com/l_.0306/?hl=zh-tw" target="_blank">https://www.instagram.com/l_.0306/?hl=zh-tw</a><br>
+			tel:<a href="tel:0921123456">0921123456</a><br>
+			E-MAIL:<a href="a0932111445@gmail.com">a0932111445@gmail.com</a><br>
+		</section>
+
+		<section class="col-lg-4">
+			<h3 id="soundtrack">電影配樂</h3>
+			大象席地而坐電影配樂<br>
+				<audio controls>
+				<source src="elephant.mp3" type="audio/mP3">
+				</audio><br>
+		</section>
+
+		<section class="col-lg-4">
+			<h3 id="youtube">推薦影片</h3>
+			不要去臺灣<br>
+			<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+		</section>
+
+		</div>
 	</main>
 <footer>
 		Copyright ©  廖翊婷. All Rights Reserved.
